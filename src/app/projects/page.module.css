@@ -1,0 +1,9 @@
+.placeholder {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  min-height: 320px; text-align: center; padding: 2rem;
+}
+.icon  { font-size: 48px; opacity: 0.2; margin-bottom: 16px; }
+.title { font-size: 20px; font-weight: 500; color: var(--text); margin-bottom: 8px; }
+.sub   { font-size: 14px; color: var(--muted); max-width: 360px; line-height: 1.6; }
+.sub code { background: var(--teal-light); color: var(--teal); padding: 1px 5px; border-radius: 3px; font-size: 13px; }

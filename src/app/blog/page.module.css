@@ -1,0 +1,14 @@
+.grid { display: grid; gap: 14px; }
+.card {
+  background: var(--white); border: 0.5px solid var(--border);
+  border-radius: 10px; padding: 1.25rem 1.5rem;
+  cursor: pointer; transition: box-shadow 0.2s, transform 0.2s;
+  display: flex; gap: 1rem;
+}
+.card:hover { box-shadow: 0 2px 14px rgba(26,122,107,0.1); transform: translateY(-1px); }
+.dateCol { text-align: center; min-width: 44px; }
+.day     { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--navy); line-height: 1; }
+.month   { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.tag     { font-size: 11px; color: var(--teal); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+.title   { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 5px; line-height: 1.4; }
+.excerpt { font-size: 13px; color: var(--muted); line-height: 1.6; }

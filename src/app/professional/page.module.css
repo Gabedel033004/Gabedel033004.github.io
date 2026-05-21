@@ -1,0 +1,46 @@
+.timeline { position: relative; padding-left: 24px; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px; top: 6px; bottom: 6px;
+  width: 1px; background: var(--border);
+}
+.tlItem { position: relative; margin-bottom: 1.75rem; }
+.tlDot {
+  position: absolute;
+  left: -21px; top: 4px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 2px solid var(--bg);
+}
+.tlCompany { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); font-weight: 500; }
+.tlRole    { font-size: 16px; font-weight: 500; color: var(--text); margin: 2px 0; }
+.tlDate    { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+.tlDesc    { font-size: 14px; color: #4a6a82; line-height: 1.65; }
+.tag {
+  display: inline-block; font-size: 11px;
+  background: var(--teal-light); color: var(--teal);
+  padding: 2px 8px; border-radius: 3px;
+  margin: 4px 4px 0 0;
+}
+
+.skillsGrid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; margin-top: 1rem; }
+.skillGroup {
+  background: var(--white); border: 0.5px solid var(--border);
+  border-radius: 8px; padding: 1rem 1.25rem;
+}
+.skillGroupTitle {
+  font-size: 12px; font-weight: 500; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px;
+}
+.skillBar   { margin-bottom: 8px; }
+.skillName  {
+  font-size: 13px; color: var(--text); margin-bottom: 3px;
+  display: flex; justify-content: space-between;
+}
+.skillName span { color: var(--muted); font-size: 12px; }
+.skillTrack { height: 4px; background: var(--teal-light); border-radius: 2px; }
+.skillFill  { height: 4px; background: var(--teal); border-radius: 2px; }
+
+@media (max-width: 640px) { .skillsGrid { grid-template-columns: 1fr; } }
