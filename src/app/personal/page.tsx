@@ -11,13 +11,19 @@ const values = [
   { icon: '🌍', label: 'Impact at scale' },
 ];
 
+const interests = [
+  { icon: 'ti-hockey-stick', title: 'Hockey',    desc: 'Montreal Canadiens die hard fan' },
+  { icon: 'ti-mountain',     title: 'Travelling', desc: 'Montreal will always be my favourite city' },
+  { icon: 'ti-microphone',   title: 'Concerts',   desc: 'Everything from Rihanna to Luke Combs' },
+  { icon: 'ti-music',        title: 'Music',      desc: 'Hip hop, Country, 2000s anthems' },
+  { icon: 'ti-shoe',         title: 'Sneakers',   desc: 'Collecting limited edition releases - Sneakerhead' },
+];
+
 export default function Personal() {
   return (
     <div className="fade-in">
       <div className="section">
         <div className="section-title">About me</div>
-
-
         <p className={styles.bio}>
           Outside of engineering, I&apos;m an extroverted person with a lot going on. I was born in Ottawa and grew up in Calgary.
           My family is from Montreal and I love spending time in Quebec. GO HABS GO!
@@ -36,6 +42,23 @@ export default function Personal() {
             <div key={v.label} className={styles.valueChip}>
               <div className={styles.vi}>{v.icon}</div>
               <p>{v.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="divider" />
+
+      <div className="section">
+        <div className="section-title">What I love</div>
+        <div className={styles.grid}>
+          {interests.map(i => (
+            <div key={i.title} className={styles.card}>
+              <div className={styles.icon}>
+                <i className={`ti ${i.icon}`} aria-hidden="true" />
+              </div>
+              <div className={styles.title}>{i.title}</div>
+              <div className={styles.desc}>{i.desc}</div>
             </div>
           ))}
         </div>
