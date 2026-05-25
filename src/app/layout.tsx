@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
 import Nav from '@/components/Nav';
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/tabler-icons.min.css" />
 
 export const metadata: Metadata = {
   title: 'Gabriel Delisle — Software Engineer',
